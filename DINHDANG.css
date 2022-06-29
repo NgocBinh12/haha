@@ -1,0 +1,136 @@
+.trangchu {
+    background-color: black;
+}
+
+.mauchu {
+    color: black;
+}
+
+.cochu {
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.mauchu1 {
+    color: #ccc;
+}
+
+.phanthinh1 {
+    background-color: #ccc;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+}
+
+.dropdown :hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.phanthinh {
+    text-align: center;
+}
+
+.bottom {
+    border-bottom: solid 10px #ccc;
+}
+
+.danhsach {
+    list-style-type: none;
+}
+
+.text {
+    position: absolute;
+}
+
+.icon1 {
+    font-size: 150px;
+}
+
+.menu1 {
+    border-right: solid 4px black;
+}
+
+.fb {
+    color: white;
+}
+
+.hinhanh a img {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.hinhanh a:hover img {
+    transform: scale(1.1);
+}
+
+.hinhanh a .name {
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px;
+    bottom: 140px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transform: translateX(-5%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.hinhanh a:hover .name {
+    bottom: 50%;
+    opacity: 1;
+}
+
+.hinhanh nut button img {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.hinhanh nut button:hover img {
+    transform: scale(1.1);
+}
+
+.hinhanh nut button .name {
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px;
+    bottom: 40px;
+    margin-left: 0px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.hinhanh nut button:hover .name {
+    opacity: 1;
+    bottom: 40%;
+}
+
+@media only screen and(min-width:46.253em) and(max-width:63.9436em) {
+    .trangdau {
+        flex-direction: column;
+    }
+}

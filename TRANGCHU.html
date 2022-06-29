@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="DINHDANG.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    
+    nav {
+        background: #5D4954;
+        height: 80px;
+        width: 100%;
+    }
+    
+    label.logo {
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+    }
+    
+    nav ul {
+        float: right;
+        margin-right: 20px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    
+    nav ul li a {
+        color: white;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 7px 13px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    a.active,
+    a:hover {
+        background: red;
+        transition: .5s;
+    }
+    
+    .checkbtn {
+        font-size: 30px;
+        color: black;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    *check {
+        display: none;
+    }
+    
+    @media(max-width:925px) {
+        label.logo {
+            font-size: 30px;
+            padding-left: 50px;
+        }
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    @media(max-width:858px) {
+        .checkbtn {
+            display: block;
+        }
+        ul1 {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2c3e50;
+            top: 80px;
+            left: 0%;
+            text-align: center;
+            transition: all .5s;
+        }
+        nav ul1 li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul1 li a {
+            font-size: 20px;
+        }
+        a:hover,
+        a.active {
+            background: none;
+            color: #0082e6;
+        }
+        #check:checked~ul1 {
+            left: 0;
+        }
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        $('.checked').click(function() {
+            $('nav').slideToggle();
+        });
+    })
+</script>
+
+<body>
+    <div class="containerr">
+        <div class="row trangchu text-center  border-bottom" id="trangdau">
+            <div class="col-md-4 border-right">
+                <p class="text-white mt-2 "><i class="fa-solid fa-mobile-screen-button"></i> <b>+9466 161 376</b></p>
+            </div>
+            <div class="col-md-1 border-right">
+                <p class="text-white mt-2 "><b>USD</b></p>
+            </div>
+            <div class="col-md-1 border-right">
+                <p class="text-white mt-2"><b>VietNam</b> </p>
+            </div>
+            <div class="col-md-2 border-right">
+                <p class="text-white mt-2"><b>RECENTLY VIEWED</b> </p>
+            </div>
+            <div class="col-md-2 border-right">
+                <p class="text-white mt-2"><i class="fa-brands fa-twitter"></i>&emsp; <i class="fa-brands fa-facebook-f "></i> &emsp;<i class="fa-brands fa-instagram"></i>&emsp; <i class="fa-brands fa-youtube"></i></p>
+            </div>
+            <div class="col--md-2 border-right">
+                <div class="nav navbar">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle  text-white " id="btn3" data-toggle="dropdown"> <b class="text-white">MY ACCOUNT</b></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item btn btn-dark" href="#"><b>Đăng nhập</b></a>
+                            <a class="dropdown-item btn btn-dark" href="#"><b>Đăng ký</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  border-bottom ">
+            <nav class="nav1">
+                <label for="check" class="checkbtn">
+                        <i class=" fa-solid fa-bars ">
+                            </i>
+                                </label>
+                <label class="logo "> <b>PhanThinh</b>
+                        </label>
+                <ul class="ul1">
+                    <li>
+                        <a class="active " href="# "> Trang chủ
+                                </a>
+                    </li>
+                    <li>
+                        <a href="# "> Trang chủ
+                                </a>
+                    </li>
+                    <li>
+                        <a href="# "> Trang chủ
+                                </a>
+                    </li>
+                    <li>
+                        <a href="# "> Trang chủ
+                                </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="row bottom ">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="hinhanh/poster2.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="hinhanh/poster3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="hinhanh/poster4.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="hinhanh/poster5.jpg">
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center m-5 ">
+            <div class="card-deck ">
+                <div class="card hinhanh" style="width:400px ;">
+                    <a><img class="w-100 text " src="hinhanh/1590735841.jpg">
+                        <div class="name hinhanh text-white  "><b class="">CÔNG TY PHAN THỊNH</b>
+                            <button class="nut hinhanh btn-dark bg-transparent text-white ">Xem chi tiet</button>
+                        </div>
+
+                    </a>
+                    <div class="card-body warpper ">
+                        <h5 class="card-title ">Dịch vụ công ty Việt Nam</h5>
+                        <ul class="card-text text-muted danhsach list-person ">
+                            <li>
+                                <a href="# ">Thành lập công ty</a>
+                            </li>
+                            <li>
+                                <a href="# ">Thành lập chi nhánh</a>
+                            </li>
+                            <li>
+                                <a href="# ">Thành lập văn phòng đại diện</a>
+                            </li>
+                            <li>
+                                <a href="# ">Thành lập nội dung ĐKKD</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card hinhanh" style="width:400px;   ">
+                    <a><img class="w-100 text " src="hinhanh/dich-vu-thanh-lap-cong-ty-nhanh-thanh-lap-doanh-nghiep-uy-tin.jpg">
+                        <div class="name hinhanh text-white  "><b class=" ">CÔNG TY PHAN THỊNH</b>
+                            <button class="nut hinhanh btn-dark bg-transparent text-white ">Xem chi tiet</button>
+                        </div>
+
+                    </a>
+
+                    <div class="card-body ">
+                        <h5 class="card-title ">Dịch vụ dành cho công ty Nước Ngoài</h5>
+                        <ul class="card-text text-muted danhsach ">
+                            <li>
+                                <a href="# ">Thành lập công ty vốn nước ngoài</a>
+                            </li>
+                            <li>
+                                <a href="# ">Thành lập văn phòng đại diện</a>
+                            </li>
+                            <li>
+                                <a href="# ">Thành lập chi nhánh</a>
+                            </li>
+                            <li>
+                                <a href="# ">Điều chỉnh giấy chứng nhận đầu tư</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card hinhanh " style="width:400px ">
+                    <a><img class="w-100 text " src="hinhanh/anh-minh-hoa-16040301904051481153761-crop-16040301968962064171725.jpg">
+                        <div class="name hinhanh text-white  "><b class=" ">CÔNG TY PHAN THỊNH</b>
+                            <button class="nut hinhanh btn-dark bg-transparent text-white ">Xem chi tiet</button>
+                        </div>
+
+                    </a>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Luật sư</h5>
+                        <ul class="card-text text-muted danhsach ">
+                            <li>
+                                <a href="# ">Luật sư riêng dành cho cá nhân</a>
+                            </li>
+                            <li>
+                                <a href="# ">Luật sư riêng dành cho gia đình</a>
+                            </li>
+                            <li>
+                                <a href="# ">Luật sư riêng dành cho doanh nghiệp</a>
+                            </li>
+                            <li>
+                                <a href="# ">Tư vấn luật hợp đồng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center m-5 ">
+            <div class="card-deck ">
+                <div class="card hinhanh " style="width:400px ">
+                    <a><img class="w-100 text " src="hinhanh/thanh-lap-cong-ty-co-von-dau-tu-nươc-ngoai.jpg">
+                        <div class="name hinhanh text-white  "><b class=" ">CÔNG TY PHAN THỊNH</b>
+                            <button class="nut hinhanh btn-dark bg-transparent text-white ">Xem chi tiet</button>
+                        </div>
+
+                    </a>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Dịch vụ kế toán</h5>
+                        <ul class="card-text text-muted danhsach ">
+                            <li>
+                                <a href="# ">Dịch vụ kế toán trọn gói</a>
+                            </li>
+                            <li>
+                                <a href="# ">Quyết toán thuế cuối năm</a>
+                            </li>
+                            <li>
+                                <a href="# ">Dịch vũ báo cáo tài chính</a>
+                            </li>
+                            <li>
+                                <a href="# ">Dịch vụ sổ sách kế toán</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card hinhanh " style="width:400px ">
+                    <a><img class="w-100 text " src="hinhanh/ảnh-kinh-doanh.jpg">
+                        <div class="name hinhanh text-white  "><b class=" ">CÔNG TY PHAN THỊNH</b>
+                            <button class="nut hinhanh btn-dark bg-transparent text-white ">Xem chi tiet</button>
+                        </div>
+
+                    </a>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Cho thuê văn phòng</h5>
+                        <ul class="card-text text-muted danhsach ">
+                            <li>
+                                <a href="# ">Tư vấn thuê văn phòng ảo</a>
+                            </li>
+                            <li>
+                                <a href="# ">Dịch vụ cho thuê văn phòng ảo</a>
+                            </li>
+                            <li>
+                                <a href="# ">Dịch vụ cho thuê văn phòng khai thuế</a>
+                            </li>
+                            <li>
+                                <a href="# ">Dịch vụ cho thuê văn phòng chia sẻ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card hinhanh " style="width:400px ">
+                    <a><img class="w-100 text " src="hinhanh/nguoi-lao-dong-nuoc-ngoai.jpg">
+                        <div class="name hinhanh text-white  "><b class=" ">CÔNG TY PHAN THỊNH</b>
+                            <button class="nut hinhanh btn-dark bg-transparent text-white ">Xem chi tiet</button>
+                        </div>
+
+                    </a>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Lao động và Bảo hiểm xã hội</h5>
+                        <ul class="card-text text-muted danhsach ">
+                            <li>
+                                <a href="# ">Dịch vụ lao động và Bảo hiểm xã hội</a>
+                            </li>
+                            <li>
+                                <a href="# ">Đăng ký BHXH - BHYT - BHTN</a>
+                            </li>
+                            <li>
+                                <a href="# ">Đăng ký hệ thống tháng lương</a>
+                            </li>
+                            <li>
+                                <a href="# ">Dịch vụ lao động và Bảo hiểm xã hội</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center m-5 ">
+            <div class="card-deck ">
+                <div class="card hinhanh" style="width:400px ">
+                    <a><img class="w-100 text " src="hinhanh/meeting1.jpg">
+                        <div class="name hinhanh text-white  "><b class=" ">CÔNG TY PHAN THỊNH</b>
+                            <button class="nut hinhanh btn-dark bg-transparent text-white ">Xem chi tiet</button>
+                        </div>
+
+                    </a>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Sở hữu trí tuệ</h5>
+                        <ul class="card-text text-muted danhsach ">
+                            <li>
+                                <a href="# ">Đăng ký nhãn hiệu, thương hiệu</a>
+                            </li>
+                            <li>
+                                <a href="# ">Đăng ký mã vạch hàng hóa</a>
+                            </li>
+                            <li>
+                                <a href="# ">Định giá thương hiệu</a>
+                            </li>
+                            <li>
+                                <a href="# ">Đăng ký nhượng quyền thương mại</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card hinhanh " style="width:400px ">
+                    <a><img class="w-100 text " src="hinhanh/Business-Administration-and-Business-management_AndrewsPhenikaa.jpg">
+                        <div class="name hinhanh text-white  "><b class=" ">CÔNG TY PHAN THỊNH</b>
+                            <button class="nut hinhanh btn-dark bg-transparent text-white ">Xem chi tiet</button>
+                        </div>
+
+                    </a>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Dịch vụ cho người nước ngoài</h5>
+                        <ul class="card-text text-muted danhsach ">
+                            <li>
+                                <a href="# ">Đăng ký giấy phép lao động</a>
+                            </li>
+                            <li>
+                                <a href="# ">Gia hạn giấy phép lao động</a>
+                            </li>
+                            <li>
+                                <a href="# ">Cấp và gia hạn VISA</a>
+                            </li>
+                            <li>
+                                <a href="# ">Cấp thẻ tạm trú</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card hinhanh" style="width:400px ">
+                    <a><img class="w-100 text " src="hinhanh/du-hoc-my-nganh-quan-tri-kinh-doanh-don-gian-hon-ban-nghi.jpg">
+                        <div class="name hinhanh text-white  "><b class=" ">CÔNG TY PHAN THỊNH</b>
+                            <button class="nut hinhanh btn-dark bg-transparent text-white ">Xem chi tiet</button>
+                        </div>
+
+                    </a>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Công chứng</h5>
+                        <ul class="card-text text-muted danhsach text-dark ">
+                            <li>
+                                <a href="# ">Văn bản thỏa thuận</a>
+                            </li>
+                            <li>
+                                <a href="# ">Hợp đồng thế chấp, vay tiền</a>
+                            </li>
+                            <li>
+                                <a href="# ">Hợp đồng kinh tế</a>
+                            </li>
+                            <li>
+                                <a href="# ">Hợp đồng ủy quyền</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-bottom ">
+            <div class="row text-center ">
+                <h2 class=" m-5 "><i class="fa-solid fa-id-card "></i> Hồ sơ năng lực - Profile </h2>
+            </div>
+            <div class="row p-5 m-5 ">
+                <div class="col-6 ">
+                    <img class="w-100 " src="hinhanh/anh-bia-ho-so-1.png ">
+                </div>
+                <div class="col-6 ">
+                    <h5 class="text-right ">Phan Thịnh rất vui vì được nhận sự quan tâm của quý khách hàng. Tham khảo hồ sơ năng lực của chúng tôi qua đường link dưới đây</h5>
+                    <button class="btn btn-dark "><i class="fa-solid fa-file-lines "></i> Tham khảo</button>
+                </div>
+            </div>
+        </div>
+        <div class="row phanthinh p-1 m-3 ">
+            <div class="col-12 ">
+                <i class="fa-solid fa-shield-heart text-primary "></i>
+                <h1 class=" text-center mauchu ">VÌ SAO BẠN NÊN CHỌN CHÚNG TÔI</h1>
+                <h5>4 lý do vì sao bạn nên chọn công ty Phan Thịnh</h5>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-3 text-center m-1 ">
+                <i class="fa-solid fa-comment-dots text-primary icon1 text-center "></i>
+                <div class="p-2 ">
+                    <h4 class="text-center "><b>Miễn phí tư vấn</b></h4>
+                    <p class="text-muted text-center ">Phan Thịnh hỗ trợ tư vấn pháp luật miễn phí các vấn đề liên quan đến thành lập công ty</p>
+                </div>
+            </div>
+            <div class="col-3 text-center m-1 ">
+                <i class="fa-solid fa-clock-rotate-left text-center text-primary icon1 "></i>
+                <div class="p-2 ">
+                    <h4 class="text-center "><b>Tốc độ làm việc</b></h4>
+                    <p class="text-muted text-center ">Phan Thịnh luôn nỗ lực giải quyết các vấn đề, thủ tục nhanh gọn</p>
+                </div>
+            </div>
+            <div class="col-3 text-center m-1 ">
+                <i class="fa-solid fa-sack-dollar icon1 text-primary "></i>
+                <div class="p-2 ">
+                    <h4 class="text-center "><b>
+                    Hạn chế tối đa phát sinh chi phí</b></h4>
+                    <p class="text-muted text-center ">Trong suốt quá trình tư vấn, Phan Thịnh luôn đưa ra những giải pháp tối ưu nhằm hạn chế tối đa nguy cơ phát sinh chi phí sau này</p>
+                </div>
+            </div>
+            <div class="col-2 text-center m-1 ">
+                <i class="fa-solid fa-face-smile-beam icon1 text-primary "></i>
+                <div class="p-2 ">
+                    <h4 class="text-center "><b>
+                        Hậu mãi chu đáo</b></h4>
+                    <p class="text-muted text-center ">Sau khi việc thành lập công ty bạn đã hoàn tất, bạn sẽ được hỗ trợ bởi nhiều dịch vụ hậu mãi chu đáo khác</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="slide.js "></script>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+
+        }, 3000);
+    </script>
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
